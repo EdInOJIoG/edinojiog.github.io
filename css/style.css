@@ -12,3 +12,13 @@ body {
 canvas {
 	border: 1px solid white;
 }
+p {
+	color: red;
+	float: right;
+	align-items: center;
+	width: 30%;
+	font-family: sans-serif;
+	font-size: 50px;
+
+
+}
