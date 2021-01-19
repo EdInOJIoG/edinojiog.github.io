@@ -44,17 +44,49 @@ function loop() {
 	snake.y += snake.dy;
 
 	if (snake.x < 0) {
-		snake.x = canvas.width - grid;
+				snake.x = 160;
+				snake.y = 160;
+				snake.cells = [];
+				snake.maxCells = 4;
+				snake.dx = grid;
+				snake.dy = 0;
+
+				apple.x = getRandomInt(0, 25) * grid;
+				apple.y = getRandomInt(0, 25) * grid;
 	}
 	else if (snake.x >= canvas.width) {
-		snake.x = 0;
+				snake.x = 160;
+				snake.y = 160;
+				snake.cells = [];
+				snake.maxCells = 4;
+				snake.dx = grid;
+				snake.dy = 0;
+
+				apple.x = getRandomInt(0, 25) * grid;
+				apple.y = getRandomInt(0, 25) * grid;
 	}
 
 	if (snake.y < 0) {
-		snake.y = canvas.height - grid;
+				snake.x = 160;
+				snake.y = 160;
+				snake.cells = [];
+				snake.maxCells = 4;
+				snake.dx = grid;
+				snake.dy = 0;
+
+				apple.x = getRandomInt(0, 25) * grid;
+				apple.y = getRandomInt(0, 25) * grid;
 	}
 	else if (snake.y >= canvas.height) {
-		snake.y = 0;
+				snake.x = 160;
+				snake.y = 160;
+				snake.cells = [];
+				snake.maxCells = 4;
+				snake.dx = grid;
+				snake.dy = 0;
+
+				apple.x = getRandomInt(0, 25) * grid;
+				apple.y = getRandomInt(0, 25) * grid;
 	}
 	snake.cells.unshift({x: snake.x, y: snake.y});
 
@@ -89,7 +121,7 @@ function loop() {
 				snake.dy = 0;
 
 				apple.x = getRandomInt(0, 25) * grid;
-				apple.x = getRandomInt(0, 25) * grid;
+				apple.y = getRandomInt(0, 25) * grid;
 
 			}
 		}
